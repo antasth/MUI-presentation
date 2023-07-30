@@ -362,6 +362,32 @@
         </code></pre>
         </section>
 
+        <section>
+          <h2>Reusable component</h2>
+          <h4>the styled() utility:</h4>
+          <pre
+            data-id="code-animation"
+          ><code class="hljs javascript" data-trim data-line-numbers>
+          <script type="text/template" >
+            const SuccessSlider = styled(Slider)<SliderProps>(({ theme }) => ({
+              width: 300,
+              color: theme.palette.success.main,
+              '& .MuiSlider-thumb': {
+                '&:hover, &.Mui-focusVisible': {
+                  boxShadow: `0px 0px 0px 8px 0.2`,
+                },
+                '&.Mui-active': {
+                  boxShadow: `0px 0px 0px 14px 0.2`,
+                },
+              },
+            }));
+            export default function StyledCustomization() {
+              return <SuccessSlider defaultValue={30} />;
+            }
+          </script>
+        </code></pre>
+        </section>
+
         <section data-markdown>
           <script type="text/template">
             ## Markdown Support
