@@ -405,7 +405,7 @@
           </h6>
           <pre
             data-id="code-animation"
-          ><code class="hljs javascript" data-trim data-line-numbers="1-14|4|9-10">
+          ><code class="hljs javascript" data-trim data-line-numbers="1-14|9|4|9-10">
           <script type="text/template" >
             import * as React from 'react';
             import GlobalStyles from '@mui/material/GlobalStyles';
@@ -423,6 +423,55 @@
             }
           </script>
         </code></pre>
+        </section>
+
+        <section>
+          <h2>Theming</h2>
+          <h3>Theme style overrides:</h3>
+          <h4>
+            Material UI provides theme tools for managing style consistency
+            between all components across your user interface.
+          </h4>
+        </section>
+
+        <section>
+          <h5>Theming</h5>
+          <pre
+            data-id="code-animation"
+          ><code class="hljs javascript" data-trim data-line-numbers>
+        <script type="text/template" >
+          const theme = createTheme({
+            palette: {
+              primary: {
+                main: '#1F6E8C',
+              },
+              secondary: purple,
+            },
+            typography: {
+              fontFamily: 'Oswald',
+              fontWeightRegular: 500,
+              fontWeightMedium: 600,
+              fontWeightBold: 700,
+            },
+          })
+        
+        </script>
+      </code></pre>
+          <pre
+            data-id="code-animation"
+          ><code class="hljs javascript" data-trim data-line-numbers>
+        <script type="text/template" >
+          function App() {
+            return (
+              <ThemeProvider theme={theme}>
+                <div className="app">
+                  <Persons />
+                </div>
+              </ThemeProvider>
+            )
+          }
+        </script>
+      </code></pre>
         </section>
 
         <section data-markdown>
