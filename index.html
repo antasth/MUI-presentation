@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/dracula.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <a href="https://mui.com">
+            <img
+              src="./assets/img/mui-logo.png"
+              alt="reveal.js logo"
+              style="margin: 0 auto 4rem auto; background: transparent"
+              class="demo-logo"
+            />
+          </a>
+          <h3>
+            The open-source React component library that implements Google's
+            Material Design.
+          </h3>
+          <p>
+            <a href="https://github.com/antasth">
+              <img
+                src="./assets/img/github-icon.png"
+                alt="github logo"
+                style="
+                  width: 50px;
+                  margin: 0 auto 0rem auto;
+                  background: transparent;
+                "
+              />
+            </a>
+          </p>
+        </section>
+        <section>
+          <h2>Introduction</h2>
+          <ul>
+            <li>What is material ui?</li>
+            <li>What is material ui includes?</li>
+            <li>Why to choose MUI?</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Features of React Material UI:</h3>
+          <ul>
+            <li>Highly customizable</li>
+            <li>Responsive</li>
+            <li>Fast loading</li>
+            <li>Themes</li>
+            <li>Backend friendly</li>
+            <li>Depreciation policy</li>
+          </ul>
+        </section>
+        <section>
+          <h2>How to install</h2>
+          <p>Default installation</p>
+          <code class="hljs javascript" data-trim data-line-numbers>
+            <p>npm install @mui/material @emotion/react @emotion/styled</p>
+          </code>
+          <p>With styled-components</p>
+          <code class="hljs javascript" data-trim data-line-numbers>
+            <p>
+              npm install @mui/material @mui/styled-engine-sc styled-components
+            </p>
+          </code>
+        </section>
+        <section>
+          <h2>Peer dependencies</h2>
+          <code class="hljs javascript" data-trim data-line-numbers>
+            <p>"react": "^17.0.0 || ^18.0.0",</p>
+            <p>"react-dom": "^17.0.0 || ^18.0.0"</p>
+          </code>
+        </section>
+
+        <section>
+          <h2>Fonts</h2>
+          <p>Google Web Fonts</p>
+          <pre><code class="hljs language-html" data-trim data-line-numbers><script type="text/template">
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?
+	family=Roboto:300,400,500,700&display=swap"
+/>
+            </script>
+          </code>
+				</pre>
+          <p>Material Icons font</p>
+          <pre><code class="hljs language-html" data-trim data-line-numbers><script type="text/template">
+            <link
+              rel="stylesheet"
+              href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            />
+            </script>
+          </code>
+					</pre>
+        </section>
+
+        <section>
+          <h3>Icons</h3>
+          <code class="hljs javascript" data-trim data-line-numbers>
+            <p>npm install @mui/icons-material</p>
+          </code>
+          <h4>Usage</h4>
+          <p>Way 1:</p>
+          <code class="hljs javascript" data-trim data-line-numbers>
+            <p>
+              import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
+            </p>
+            <p>
+              import ThreeDRotation from '@mui/icons-material/ThreeDRotation';
+            </p>
+          </code>
+          <p>Way 2:</p>
+          <code class="hljs javascript" data-trim data-line-numbers>
+            <p>
+              import { AccessAlarm, ThreeDRotation } from '@mui/icons-material';
+            </p>
+          </code>
+        </section>
+
+        <section>
+          <h2>Usage</h2>
+          <ul>
+            <li>Components</li>
+            <li>Customization</li>
+            <li>templates</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Components groups</h2>
+          <ul>
+            <li>Inputs</li>
+            <li>Data display</li>
+            <li>Feedback</li>
+            <li>Surfaces</li>
+            <li>Navigation</li>
+            <li>Layout</li>
+            <li>Utils</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Inputs Components</h2>
+          <ul>
+            <li>Button</li>
+            <li>Checkbox</li>
+            <li>Select</li>
+            <li>Text Field</li>
+            <li>Radio group</li>
+            <li>Layout</li>
+            <li>Rating</li>
+          </ul>
+        </section>
+
+        <section>
+          <h4>Data display components examples</h4>
+          <ul>
+            <li> <span>Avatar</span>
+              <img src="./assets/img/avatar.png" alt="avatar">
+            </li>
+            <li> <span>Table</span>
+              <img src="./assets/img/table.png" alt="table">
+            </li>
+            <li> <span>Tooltip</span>
+              <img src="./assets/img/tooltip.png" alt="table">
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h4>Feedback components examples</h4>
+          <ul>
+            <li> <span>Alert</span>
+              <img src="./assets/img/alert.png" alt="alert">
+            </li>
+            <li> <span>Table</span>
+              <img src="./assets/img/table.png" alt="table">
+            </li>
+            <li style="display: flex; align-items: center; column-gap: 10px;"> <span>Dialog</span>
+              <img src="./assets/img/dialog.png" alt="dialog">
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h4>Surfaces components examples</h4>
+          <ul>
+            <li> <span>Accordion</span>
+              <img src="./assets/img/accordion.png" alt="accordion">
+            </li>
+            <li> <span>App bar</span>
+              <img src="./assets/img/appbar.png" alt="appbar">
+            </li>
+            <li style="display: flex; align-items: center; column-gap: 10px;"> <span>Card</span>
+              <img src="./assets/img/card.png" alt="card">
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h4>Navigation components examples</h4>
+          <ul>
+            <li> <span>Accordion</span>
+              <img src="./assets/img/accordion.png" alt="accordion">
+            </li>
+            <li> <span>App bar</span>
+              <img src="./assets/img/appbar.png" alt="appbar">
+            </li>
+            <li style="display: flex; align-items: center; column-gap: 10px;"> <span>Card</span>
+              <img src="./assets/img/card.png" alt="card">
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Components API</h2>
+          <ul>
+            <li>Components</li>
+            <li>Components API</li>
+          </ul>
+        </section>
+
+        <section data-auto-animate>
+          <h3 data-id="code-title">Quick start with components</h3>
+          <pre
+            data-id="code-animation"
+          ><code class="hljs javascript" data-trim data-line-numbers="1-2|3|7-9|1-13">
+            <script type="text/template" >
+              import React from 'react';
+              import ReactDOM from 'react-dom';
+              import Button from '@material-ui/core/Button';
+              
+              function App() {
+                return (
+                  <Button variant="contained" color="primary">
+                    Hello World
+                  </Button>
+                );
+              }
+              
+              ReactDOM.render(<App />, document.querySelector('#app'));
+            </script>
+					</code></pre>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## Markdown Support
+
+            Write content using inline or external Markdown.
+            Instructions and more info available in the [docs](https://revealjs.com/markdown/).
+
+            ```html []
+            <section data-markdown>
+              ## Markdown Support
+
+              Write content using inline or external Markdown.
+              Instructions and more info available in the [docs](https://revealjs.com/markdown/).
+            </section>
+            ```
+          </script>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      })
+    </script>
+  </body>
+</html>
